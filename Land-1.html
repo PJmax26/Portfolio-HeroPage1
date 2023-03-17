@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f3f5f8;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        cursor: pointer;
+        color: rgb(66, 71, 71);
+    }
+
+    b{
+        font-size: 70px;
+        color: rgb(25, 189, 183);
+    }
+
+    nav ul li{
+        list-style: none;
+        line-height: 80px;
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        color: rgb(66, 71, 71);
+    }
+
+    nav ul li a:hover{
+        color: rgb(25, 189, 183);
+    }
+
+    #contact{
+        background-color: rgb(25, 189, 183);
+        outline: 0;
+        border: none;
+        padding: 10px;
+        font-size: 17px;
+        color: #f3f5f8;
+        cursor: pointer;
+    }
+
+    #contact:hover{
+        background-color: rgb(34, 133, 130);
+        color: white;
+    }
+
+    .hero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .hero::before{
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        content: ' ';
+        border-radius: 50%;
+        background: linear-gradient(45deg, rgb(25, 189, 183), pink);
+        top: 40%;
+        left: -13%;
+        animation: object1 6s linear infinite;
+    }
+
+    .hero::after{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        content: ' ';
+        border-radius: 50%;
+        background: linear-gradient(45deg, rgb(25, 189, 183), pink);
+        top: 10%;
+        left: 40%;
+        animation: object2 5s linear infinite;
+    }
+
+    @keyframes object1{
+        50%{
+            left: -23%;
+            top: 30%;
+        }
+    }
+
+    @keyframes object2{
+        50%{
+            left: 35%;
+            top: 10%;
+        }
+    }
+
+    .hero h3{
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        color: rgb(66, 71, 71);
+    }
+
+    .hero h1{
+        font-size: 6em;
+        color: rgb(66, 71, 71);
+    }
+
+    span{
+        color: rgb(25, 189, 183);
+    }
+
+    .hero p{
+        width: 60%;
+        font-size: 20px;
+        color: rgb(66, 71, 71);
+    }
+
+    .hero button{
+        border: 0;
+        outline: 0;
+        background-color: rgb(25, 189, 183);
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+        color: #f3f5f8;
+        font-size: 20px;
+        box-shadow: 5px 10px 10px gray;
+    }
+
+    .hero button:hover{
+        background: linear-gradient(45deg, rgb(25, 189, 183), pink);
+    }
+
+    .cont1{
+        z-index: 5;
+    }
+
+    .wallpaper{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        background-color: rgb(25, 189, 183);
+        border-radius: 50em 40em 30em 40px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">folio<b>.</b></div>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">skills</a></li>
+                <li><a href="">services</a></li>
+            </ul>
+            <a href=""><button id="contact">Contact Me</button></a>
+        </nav>
+
+        <div class="hero">
+            <div class="cont1">
+                <h3>Hello, I'm Jawad</h3>
+                <h1>I'm a <span>Coder</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos facere architecto accusamus, incidunt tempora repudiandae vel. Nisi reiciendis exercitationem vel, sunt suscipit sed, commodi praesentium tempora veritatis iure soluta? Omnis?
+                </p>
+                <div class="btns">
+                    <button>Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+    
+            <div class="cont2">
+                <div class="wallpaper"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
